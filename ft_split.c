@@ -6,7 +6,7 @@
 /*   By: gacalaza <gacalaza@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/27 20:37:55 by gacalaza          #+#    #+#             */
-/*   Updated: 2022/10/12 18:31:09 by gacalaza         ###   ########.fr       */
+/*   Updated: 2022/10/15 20:00:30 by gacalaza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,10 +76,12 @@ static char	**freearray(char const *s, char c, char **array)
 	{
 		while (array[i])
 		{
-			array[i] = NULL;
 			free(array[i++]);
+			array[i] = NULL;
 		}
 	}
+	if (!array)
+		return (NULL);
 	return (array);
 }
 

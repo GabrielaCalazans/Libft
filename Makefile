@@ -6,7 +6,7 @@
 #    By: gacalaza <gacalaza@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/12 19:45:45 by gacalaza          #+#    #+#              #
-#    Updated: 2022/10/11 22:10:41 by gacalaza         ###   ########.fr        #
+#    Updated: 2022/10/15 03:23:17 by gacalaza         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,11 +34,7 @@ all: $(NAME)
 
 $(NAME): $(OBJS)
 
-$(OBJS): $(SRCS)
-
 bonus: $(BOBJS)
-
-$(BOBJS): $(BSRCS)
 
 clean:
 	rm -f $(OBJS) $(BOBJS)
