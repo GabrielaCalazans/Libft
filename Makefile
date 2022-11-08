@@ -6,7 +6,7 @@
 #    By: gacalaza <gacalaza@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/12 19:45:45 by gacalaza          #+#    #+#              #
-#    Updated: 2022/10/15 03:23:17 by gacalaza         ###   ########.fr        #
+#    Updated: 2022/10/17 23:29:56 by gacalaza         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,7 +45,7 @@ fclean: clean
 re: fclean all
 
 %.o: %.c
-	cc $(FLAGS) -c $< -o $@
-	ar rcs $(NAME) $@
+	@cc $(FLAGS) -c $< -o $@
+	@ar rcs $(NAME) $@
 
 .PHONY: all clean fclean re
